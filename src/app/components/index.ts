@@ -4,6 +4,7 @@ import { MaterialModule } from '@angular/material';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
+import { BookInfoComponent } from './book-info';
 import { BookAuthorsComponent } from './book-authors';
 import { BookPriceComponent } from './book-price';
 import { BookDetailComponent } from './book-detail';
@@ -19,6 +20,7 @@ import { PipesModule } from '../pipes';
 
 
 export const COMPONENTS = [
+  BookInfoComponent,
   BookAuthorsComponent,
   BookPriceComponent,
   BookDetailComponent,

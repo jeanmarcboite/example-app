@@ -16,7 +16,7 @@ import { Book } from '../models/book';
           <p *ngIf="description">{{ description | bcEllipsis }}</p>
         </md-card-content>
         <md-card-footer>
-          <bc-book-authors [book]="book"></bc-book-authors>
+          <bc-book-info [book]="book"></bc-book-info>
         </md-card-footer>
       </md-card>
     </a>
