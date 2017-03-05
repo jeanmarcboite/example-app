@@ -15,7 +15,10 @@ import { Book } from '../models/book';
         <p [innerHtml]="description"></p>
       </md-card-content>
       <md-card-footer class="footer">
-        <bc-book-authors [book]="book"></bc-book-authors>
+<md-grid-list cols="2">
+        <md-grid-tile><bc-book-authors [book]="book"></bc-book-authors></md-grid-tile>
+        <md-grid-tile><bc-book-price [book]="book"></bc-book-price></md-grid-tile>
+</md-grid-list>
       </md-card-footer>
       <md-card-actions align="start">
         <button md-raised-button color="warn" *ngIf="inCollection" (click)="remove.emit(book)">

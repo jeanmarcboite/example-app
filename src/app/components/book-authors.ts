@@ -6,10 +6,8 @@ import { Book } from '../models/book';
 @Component({
   selector: 'bc-book-authors',
   template: `
-    <h5 md-subheader>Written By:</h5>
-    <span>
+    <h5>Written By:</h5>
       {{ authors | bcAddCommas }}
-    </span>
   `,
   styles: [`
     h5 {
